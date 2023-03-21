@@ -79,7 +79,7 @@
   font-weight: 700;
   font-size: 0.75rem;
   line-height: 15px;
-  /* padding: 0.125rem 0.5rem; */
+
   color: var(--gray-200);
 }
 
@@ -104,16 +104,15 @@
   font-weight: 700;
   font-size: 0.75rem;
   color: var(--gray-200);
-  /* padding: 0.125rem 0.5rem; */
   background-color: var(--gray-400);
   border-radius: 999px;
   line-height: 15px;
 }
 
-.salve1 {
+.containerTasks {
   display: flex;
   align-items: flex-start;
-  gap: 3.3rem;
+  gap: 4rem;
   justify-content: space-between;
   background-color: var(--gray-500);
   border: 1px solid var(--gray-400);
@@ -122,7 +121,7 @@
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
 }
 
-.salve1 button:last-child {
+.containerTasks button:last-child {
   padding-top: 0.1rem;
   background-color: transparent;
   border: none;
@@ -132,41 +131,32 @@
   transition: color 0.2s;
 }
 
-.salve1 button:last-child:hover {
+.containerTasks button:last-child:hover {
   color: var(--Danger);
 }
 
-.salve1 + .salve1 {
+.containerTasks + .containerTasks {
   margin-top: 0.75rem;
 }
 
-.salve1 .salve2 {
+.containerTasks .task {
   display: flex;
   align-items: flex-start;
   gap: 1rem;
 }
 
-.salve1 .salve2 > div.peido {
-  background-color: red;
-  /* width: 1.25rem; */
-  /* height: 1.25rem; */
-  width: 20px;
-  height: 20px;
-  /* background-color: red; */
-}
-
-.salve1 .salve2 p.notCompleted {
+.containerTasks .task p.notComplete {
   color: var(--gray-100);
   font-size: 0.875rem;
   line-height: 140%;
-  word-break: break-all;
+  word-break: break-word;
 }
 
-.salve1 .salve2 p.isCompleted {
+.containerTasks .task p.isComplete {
   color: var(--gray-100);
   opacity: 0.5;
   font-size: 0.875rem;
   line-height: 140%;
   text-decoration: line-through;
-  word-break: break-all;
+  word-break: break-word;
 }

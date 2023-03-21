@@ -94,9 +94,9 @@ const Tasks = () => {
         </div>
         {tasks.map((task) => {
           return (
-            <div className={styles.salve1}>
-              <div className={styles.salve2}>
-                <div className={styles.peido}>
+            <div className={styles.containerTasks}>
+              <div className={styles.task}>
+                <div>
                   <input
                     onClick={() => {
                       handleTaskCompleted(task.id, task.isCompleted);
@@ -106,7 +106,7 @@ const Tasks = () => {
                 </div>
                 <p
                   className={
-                    task.isCompleted ? styles.isCompleted : styles.notCompleted
+                    task.isCompleted ? styles.isComplete : styles.notComplete
                   }
                 >
                   {task.name}
