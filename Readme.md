@@ -49,3 +49,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - css modules
 - phosphor-react
 - uuid
+
+---
+
+### link para poder utilizar o projeto desenvolvido.
+
+- https://jolly-torte-1c1559.netlify.app/
